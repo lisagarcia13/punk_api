@@ -33,7 +33,6 @@ lager.save()
 avery.save()
 
 app = Flask(__name__)
-# @app.route('/beers/random', methods=['GET'])
 @app.route('/beers', methods=['GET'])
 @app.route('/beers/<id>', methods=['GET'])
 def beer(id=None):
